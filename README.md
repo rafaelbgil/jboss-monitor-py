@@ -15,11 +15,18 @@
 <ul>
   <li>Red Hat JBoss Enterprise Application Platform 7 ou superior.</li>
   <li>Wildfly 10 ou superior.</li>
+  <li>Modo de execução: <b>Domain</b> . Essa biblioteca suporte somente o modo domain.</li>
  </ul>
  
  <h2>Instalação</h2>
- <p>Clone o repositório para seu ambiente e import a biblioteca, considerando que </p>
+ <p>Clone o repositório para seu ambiente e import a biblioteca para seu projeto.</p>
         
         $ git clone https://github.com/rafaelbgil/jboss-monitor-py.git
-        $ 
+ 
+ <h2>Tutorial de inicia rápido</h2>
+       
+       $ python3
+       >>> from jbossMonitor import JbossMonitor
+       >>> objetoJbossMonitor =  JbossMonitor(urlJboss='http://127.0.0.1:9200/management', usuarioJboss='usuario', senhaJboss='senha', hostController='host_controller', jbossServer='servidor')
+       >>> print(objetoJbossMonitor.objetoJboss.getJvmMemoryServer()) # obtem o uso de memória da jvm e exibe na tela.
   

@@ -23,7 +23,7 @@
         
         $ git clone https://github.com/rafaelbgil/jboss-monitor-py.git
  
- <h2>Tutorial de inicia rápido</h2>
+ <h2>Tutorial de inicio rápido</h2>
        
        $ python3
        >>> from jbossMonitor import JbossMonitor
